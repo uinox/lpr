@@ -138,7 +138,7 @@ const updateRate = (index: number, val: any) => {
       outstandingAmount = Number((Number(data[index].loanAmount) - (Number(val.repaymentAmount) - interest)).toFixed(2));
     } else {
       outstandingInterest = interest - Number(val.repaymentAmount);
-      outstandingAmount = Number(data[index].loanAmount.toFixed(2));
+      outstandingAmount = Number(Number(data[index].loanAmount).toFixed(2));
     }
     total = Number((outstandingInterest + outstandingAmount).toFixed(2));
     console.log("---total--", total)
