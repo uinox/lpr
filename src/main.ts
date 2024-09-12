@@ -10,6 +10,10 @@ import router from './router'
 
 const app = createApp(App)
 
+let title = document.createElement("title");
+title.innerHTML = "编程技术分享";
+document.head.appendChild(title)
+
 app.use(createPinia())
 app.use(router)
 app.use(ElementPlus, {

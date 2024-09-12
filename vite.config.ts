@@ -5,6 +5,9 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  esbuild:{
+    charset:'ascii'
+  },
   plugins: [
     vue(),
   ],

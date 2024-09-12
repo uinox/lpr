@@ -5,15 +5,18 @@ import { RouterView } from 'vue-router'
 <template>
   <div class="header">
   </div>
-  <main style="height: 100%;">
+  <main class="main">
     <RouterView />
   </main>
   <div class="footer">
-    <a href="https://beian.miit.gov.cn/">京ICP备17049124</a>
+    <a href="https://beian.miit.gov.cn/">京ICP备17049124号-6</a>
   </div>
 </template>
 
 <style scoped>
+.main{
+  height: calc(100% - 50px);
+}
 .footer{
   text-align: center;height: 50px;background-color: #fafafa;line-height: 50px;
 }
