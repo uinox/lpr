@@ -11,12 +11,12 @@ const router = createRouter({
       component: Home
     },
     {
-      path: '/td/sd/1/2/b/a/test',
+      path: '/demo',
       name: 'test',
       component: Test
     },
     {
-      path: '/9/0//09_d/b/c/d/loan',
+      path: '/loan',
       name: 'loan',
       component: () => import('@/views/Loan/index.vue')
     },
