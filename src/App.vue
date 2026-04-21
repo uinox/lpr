@@ -8,9 +8,9 @@ import { RouterView } from 'vue-router'
   <main class="main">
     <RouterView />
   </main>
-  <div class="footer">
+  <!-- <div class="footer">
     <a href="https://beian.miit.gov.cn/">京ICP备17049124号-6</a>
-  </div>
+  </div> -->
 </template>
 
 <style scoped>
